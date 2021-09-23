@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+
+<p>Coins: <span id = 'coins'>0</span</p>
+<div class = 'container'>
+ <div class = 'row'>
+
+
+    <div class = 'col'>
+      <h2>Tasks</h2>
+    <div class = 'row' >
+        <div id = 'taskDisplay'>
+           <ol id = 'tasks' class = ''list-group></ol>
+        </div>
+
+      <div class = 'row-xs'>
+      <button id = 'plusTask'>+</button>
+    </div>
+  </div>
+  <div id = 'taskEnter'>
+    <div id = 'row-xs'>
+      <button id = 'closeTask' class = 'btn btn-danger'>X</button>
+    </div>
+    <div class = 'row-xs'>
+      <label for="title">title: </label>
+      <input type="text" name = 'title' id = 'title'>
+    </div>
+    <div class = 'row-xs'>
+      <label for="difficulty">difficulty: </label>
+      <select id = 'difficulty' name = 'difficulty'>
+        <option value="trival">trival</option>
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+    </div>
+      <div class = 'row-xs'>
+      <label for="due">due: </label>
+      <input type="date" id="due" name="due">
+    </div>
+    <div class = 'row-xs'>
+      <label for="notes">notes: </label>
+      <input type = 'text' name = 'notes' id = 'notes'>
+    </div>
+    <div class = 'row-xs'>
+    <button id = 'addButton' class = 'btn btn-primary'>Add Task</button>
+  </div>
+</div>
+</div>
+
+
+<div class = 'col'>
+  <h2>Rewards</h2>
+  <div class = 'row'>
+    <div id = 'rewardDisplay'>
+      <ol id = 'rewards'></ol>
+    </div>
+    </div>
+    <div class = 'row-xs'>
+    <button id = 'plusReward'>+</button>
+  </div>
+  <div id = 'rewardEnter'>
+    <div id = 'row-xs'>
+      <button id = 'closeReward' class = 'btn btn-danger'>X</button>
+    </div>
+    <div class = 'row-xs'>
+    <label for="title">title:</label>
+    <input type="text" name = 'title' id = 'title'>
+  </div>
+    <div class = 'row-xs'>
+    <label for= 'cost'>cost</label>
+    <input type = 'text' name = 'cost' id = 'cost'>
+  </div>
+    <div class = 'row-xs'>
+    <label for="notes">notes:</label>
+    <input type = 'text' name = 'notes' id = 'notes'>
+  </div>
+      <div class = 'row-xs'>
+  <button id = 'rewardButton' class = 'btn btn-success'>Add Reward</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </body>
+</html>
